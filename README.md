@@ -1,7 +1,7 @@
 ## document
 
 >* learning shell
->* learning hadoop
->* learning hive
+>* learning hadoop(include hive)
+>* learning git
 >* learning pyhton
 >* learning nginx
