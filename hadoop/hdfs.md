@@ -34,6 +34,12 @@ $hadoop dfs -rmr out
 $bin/hadoop dfs -get {dir}/{filename} /home/hadoop/output
 ```
 
+>* 显示目录中所有文件的大小，或者当紧指定一个文件时，显示该文件大小
+
+```shell
+$bin/hadoop dfs -du URI[URI ...]
+```
+
 #### 2. 管理与更新
 
 >* 报告HDFS的基本统计信息
