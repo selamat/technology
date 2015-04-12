@@ -1,4 +1,4 @@
-# cloudera deploy(ubuntu)
+# cloudera5.3.2 deploy(ubuntu)
 ## 1. download cloudera
 
 #### cloudera manager下载链接（注意版本选择要与机器一致）：[http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/cm_vd.html#cmvd_topic_1](http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/cm_vd.html#cmvd_topic_1)
