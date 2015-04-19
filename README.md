@@ -1,7 +1,7 @@
-## document
+# 此工程记录了在日常工作与学习中碰到的问题以及自己的解决办法
 
->* learning shell
->* learning hadoop(include hive)
->* learning git
->* learning pyhton
->* learning nginx
+>* shell基础
+>* hadoop生态圈
+>* git使用
+>* pyhton基础
+>* nginx使用
