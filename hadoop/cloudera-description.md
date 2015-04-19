@@ -122,7 +122,7 @@ Caused by: java.lang.ClassNotFoundException: Class org.apache.hadoop.hive.contri
 	... 24 more
 ```
 
-### 产生原因，建表成功，说明建表语句中引用的serde类加载无误，但执行类似count操作，出现上述异常，说明执行jar加载异常，通过排查  **Class org.apache.hadoop.hive.contrib.serde2.RegexSerDe not found**  异常根源，解决方式：
+### 产生原因，建表成功，说明建表语句中引用的serde类加载无误，但执行类似count操作，出现上述异常，说明执行jar加载异常，通过排查发现  **Class org.apache.hadoop.hive.contrib.serde2.RegexSerDe not found**  为异常根源，hive-contrib jar包已经在CLASSPATH中，但不生效，所以只有通过外部引用的方式解决。解决方式：
 
 ```shell    
 ## add this code to hive-site.xml
@@ -141,7 +141,7 @@ Caused by: java.lang.ClassNotFoundException: Class org.apache.hadoop.hive.contri
 ### manager重启agent实例失败，agent日志打印如下
 
 ```shell
-* Starting Supervisor daemon manager...
+Starting Supervisor daemon manager...
 Error: Another program is already listening on a port that one of our HTTP servers is configured to use.  Shut this program down first before starting supervisord.
 
 For help, use /usr/bin/supervisord -h
