@@ -122,7 +122,7 @@ Caused by: java.lang.ClassNotFoundException: Class org.apache.hadoop.hive.contri
 	... 24 more
 ```
 
-### 产生原因，建表成功，说明建表语句中引用的serde类加载无误，但执行类似count(*)操作，出现上述异常，说明执行jar加载异常，通过排查 **Class org.apache.hadoop.hive.contrib.serde2.RegexSerDe not found** 异常根源，解决方式：
+### 产生原因，建表成功，说明建表语句中引用的serde类加载无误，但执行类似count操作，出现上述异常，说明执行jar加载异常，通过排查  **Class org.apache.hadoop.hive.contrib.serde2.RegexSerDe not found**  异常根源，解决方式：
 
 ```shell    
 ## add this code to hive-site.xml
