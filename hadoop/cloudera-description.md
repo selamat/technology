@@ -41,7 +41,7 @@ java.lang.RuntimeException: HMaster Aborted
 ## This command is used to repair MetaData of Hbase
 hbase org.apache.hadoop.hbase.util.hbck.OfflineMetaRepair 
 	
-## use ls / to list files on zookeeper, then use 'rmr /hbase' to delete hbase's date
+## use ls / to list files on zookeeper, then use 'rmr /hbase' to delete hbase's data
 /opt/cloudera/parcels/CDH-5.3.2-1.cdh5.3.2.p0.10/lib/zookeeper/bin/zkCli.sh 
 
 ## start hbase
